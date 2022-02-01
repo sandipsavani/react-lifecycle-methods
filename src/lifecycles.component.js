@@ -20,7 +20,6 @@ class Lifecycles extends React.Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("nextState: ", nextState);
-    console.log("shouldComponentUpdate!", nextProps);
     return nextProps.text !== this.props.text;
   }
 
